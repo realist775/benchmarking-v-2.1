@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPSWOOD STRATEGIC EXECUTIVE REPORT</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="executive-theme">
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <span class="drawer-logo">ALPSWOOD</span>
+      <button class="drawer-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <!-- Injected -->
+    </ul>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="strategic-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <span class="brand">ALPSWOOD</span>
+          <span class="type">STRATEGY</span></a>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <!-- Injected -->
+      </ul>
+
+      <button class="mobile-menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="scroll-progress-bar"></div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- 1. INTRO -->
+    <section id="intro" class="section-panel" data-nav="개요">
+      <div class="container container-narrow">
+        <div class="intro-header fade-up">
+          <span class="label-badge">CONFIDENTIAL STRATEGIC REPORT</span>
+          <h1 class="display-title">MARKET ENTRY &<br />GROWTH STRATEGY</h1>
+          <p class="subtitle">ALPSWOOD의 네이버 스마트스토어 성장 구조를 <span>“실행 단위”</span>로 설계한 보고서</p>
+        </div>
+
+        <div class="kpi-dashboard fade-up delay-1">
+          <div class="kpi-box">
+            <span class="kpi-label">Target</span>
+            <strong class="kpi-value">Hybrid</strong>
+            <span class="kpi-desc">B2B + Micro-DIY</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-label">Benchmarks</span>
+            <strong class="kpi-value">17+</strong>
+            <span class="kpi-desc">Deep Analysis</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-label">Goal</span>
+            <strong class="kpi-value">6 Month</strong>
+            <span class="kpi-desc">Power Grade → Big Power</span>
+          </div>
+        </div>
+
+        <div class="strategic-thesis fade-up delay-2">
+          <h3>전략 정의 (핵심 전제)</h3>
+          <p>
+            “네이버 스마트스토어는 판매 사이트가 아니라,
+            <strong class="highlight-gold">사용자 행동 기반 평가 시스템</strong>이다.”
+          </p>
+
+          <div class="flow-diagram">
+            <div class="flow-step">유입<br /><span class="micro">Search</span></div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="flow-step">체류<br /><span class="micro">Stay</span></div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="flow-step">신뢰<br /><span class="micro">Trust</span></div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="flow-step">전환<br /><span class="micro">Conversion</span></div>
+          </div>
+
+          <p class="thesis-desc">
+            ALPSWOOD는 “상품 등록”이 아니라, 위 흐름을 강제로 <br> 만들 수 있는
+            구조(상세페이지·리뷰·상담·배송·콘텐츠·재구매)를 설계해야만 성장한다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MARKET MAP -->
+    <section id="market-map" class="section-panel" data-nav="포지셔닝">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>시장 포지셔닝 분석</h2>
+          <p>17+ 경쟁사를 “가격/가치”와 “자재/서비스” 축으로 재분류했습니다.</p>
+        </div>
+
+        <div class="positioning-map-container fade-up">
+          <div class="axis-y-label top">프리미엄 · 고부가가치</div>
+          <div class="axis-y-label bottom">범용 · 가격 경쟁</div>
+          <div class="axis-x-label left">자재 중심 (제품 판매)</div>
+          <div class="axis-x-label right">서비스 중심 (솔루션/시공/가공)</div>
+
+          <div class="map-grid">
+            <div class="quadrant q1"><span class="q-bg-text">프리미엄 솔루션</span></div>
+            <div class="quadrant q2"><span class="q-bg-text">고급 자재</span></div>
+            <div class="quadrant q3"><span class="q-bg-text">대중 범용</span></div>
+            <div class="quadrant q4"><span class="q-bg-text">서비스 & DIY</span></div>
+
+            <div id="map-dots-layer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BENCHMARKING -->
+    <section id="benchmarking" class="section-panel bg-darker" data-nav="벤치마킹">
+      <div class="container">
+        <div class="header-split">
+          <div class="header-left">
+            <h2>경쟁사 Deep Dive</h2>
+            <p>카드를 클릭하면 “성공 구조(메커니즘)”가 확장됩니다.</p>
+          </div>
+          <div class="header-right">
+            <div class="filter-group">
+              <button class="filter-chip active" data-filter="all">전체</button>
+              <button class="filter-chip" data-filter="material">자재형</button>
+              <button class="filter-chip" data-filter="diy">DIY/서비스형</button>
+              <button class="filter-chip" data-filter="premium">프리미엄형</button>
+              <button class="filter-chip" data-filter="special">특화형</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="competitor-grid" id="competitor-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. EXTRACTION -->
+    <section id="extraction" class="section-panel" data-nav="핵심 구조">
+      <div class="container container-narrow">
+        <div class="section-title text-center">
+          <h2>ALPSWOOD 성공 구조 핵심 압축</h2>
+          <p>벤치마킹에서 반복적으로 확인된 “매출 메커니즘”을 실행 단위로 재구성했습니다.</p>
+        </div>
+        <div class="extraction-list" id="extraction-list"></div>
+        <div class="ex-modal" id="exModal" aria-hidden="true">
+          <div class="ex-modal__overlay" data-ex-close></div>
+
+          <div class="ex-modal__panel" role="dialog" aria-modal="true" aria-labelledby="exModalTitle">
+            <div class="ex-modal__head">
+              <div class="ex-modal__headText">
+                <div class="ex-modal__badge" id="exModalBadge">핵심</div>
+                <h3 class="ex-modal__title" id="exModalTitle">Title</h3>
+                <p class="ex-modal__subtitle" id="exModalSubtitle">Subtitle</p>
+              </div>
+              <button class="ex-modal__close" type="button" aria-label="닫기" data-ex-close>✕</button>
+            </div>
+
+            <div class="ex-modal__body" id="exModalBody"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SWOT -->
+    <section id="swot" class="section-panel" data-nav="SWOT">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>SWOT 분석 (실행형 진단)</h2>
+          <p>추상적 문장이 아니라 “구조적 원인 → 실행 과제”로 작성했습니다.</p>
+        </div>
+
+        <div class="swot-layout">
+          <div class="swot-quadrant strength" id="swot-s"></div>
+          <div class="swot-quadrant weakness" id="swot-w"></div>
+          <div class="swot-quadrant opportunity" id="swot-o"></div>
+          <div class="swot-quadrant threat" id="swot-t"></div>
+        </div>
+
+        <div class="strategy-matrix-container mt-5">
+          <h3>교차 전략 매트릭스 (SO/ST/WO/WT 실행안)</h3>
+          <div class="matrix-grid" id="swot-matrix"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ROADMAP -->
+    <section id="roadmap" class="section-panel bg-darker" data-nav="로드맵">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>0~6개월 성장 로드맵</h2>
+          <p>단순 텍스트가 아니라, KPI/프로세스/자산 축적을 타임라인으로 고정합니다.</p>
+        </div>
+
+        <div class="roadmap-wrapper">
+          <div class="roadmap-timeline-line"></div>
+          <div id="roadmap-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PREMIUM TOP 5 -->
+    <section id="premium-top5" class="section-panel" data-nav="Top 5 Insight">
+      <div class="container">
+        <div class="section-title">
+          <h2>Premium Top 5 Benchmarks</h2>
+          <p>Learning from Naver's Category Leaders (Non-wood)</p>
+        </div>
+        <div class="premium-grid" id="premium-grid"></div>
+      </div>
+    </section>
+
+    <!-- 8. PLACE & BLOG (대폭 확장) -->
+    <section id="place-blog" class="section-panel" data-nav="플레이스·블로그">
+      <div class="container">
+
+        <!-- SECTION TITLE -->
+        <div class="section-title place-blog-title">
+          <span class="section-badge">NAVER ECOSYSTEM</span>
+          <h2>네이버 플레이스 · 블로그 전략 분석</h2>
+          <p>스토어 이전 단계에서 고객을 선점하고 신뢰를 축적하는 핵심 채널 구조</p>
+        </div>
+
+        <div class="dual-col-layout">
+          <div class="col-left" id="place-strategy"></div>
+          <div class="col-right" id="blog-strategy"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 9. DO & DON'T -->
+    <section id="dodont" class="section-panel bg-darker" data-nav="체크리스트">
+      <div class="container container-mid">
+        <h2 class="text-center mb-5">최종 실행 체크</h2>
+        <div class="dodont-grid" id="dodont-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (업그레이드) -->
+  <footer class="executive-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand">
+        <div class="footer-logo-row">
+          <div class="footer-mark">A</div>
+          <div>
+            <h2>ALPSWOOD</h2>
+            <p class="footer-sub">Executive Strategy Intelligence Report · v2.1</p>
+          </div>
+        </div>
+
+        <div class="footer-bullets">
+          <div class="f-bullet"><i class="fa-solid fa-shield-halved"></i> 알고리즘 관점에서 “구조”로 설계</div>
+          <div class="f-bullet"><i class="fa-solid fa-gears"></i> 상세·리뷰·상담·배송·콘텐츠를 한 덩어리로 운영</div>
+          <div class="f-bullet"><i class="fa-solid fa-rotate"></i> 블로그/플레이스 자산화를 통해 Flywheel 구축</div>
+        </div>
+      </div>
+
+      <div class="footer-col links">
+        <h3>바로가기</h3>
+        <a class="footer-link" href="#benchmarking"><i class="fa-regular fa-circle-right"></i> Benchmarking</a>
+        <a class="footer-link" href="#swot"><i class="fa-regular fa-circle-right"></i> SWOT</a>
+        <a class="footer-link" href="#place-blog"><i class="fa-regular fa-circle-right"></i> Place · Blog</a>
+      </div>
+
+      <div class="footer-col contact" id="contact">
+        <h3>Contact</h3>
+        <div class="contact-card">
+          <div class="c-row">
+            <span class="c-label">Designed by</span>
+            <span class="c-value">Ale</span>
+          </div>
+          <div class="c-row">
+            <span class="c-label">주소</span>
+            <span class="c-value">김해시 흥동 39-5</span>
+          </div>
+          <div class="c-row">
+            <span class="c-label">연락처</span>
+            <span class="c-value">010-7566-9572</span>
+          </div>
+          <div class="c-row">
+            <span class="c-label">목표</span>
+            <span class="c-value">Naver Store Power Grade → Big Power</span>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          본 문서는 ALPSWOOD의 내부 전략 설계를 위한 참고 자료이며,
+          실행 시점의 시장/경쟁 환경에 따라 조정이 필요합니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="bottom-left">© 2026 ALPSWOOD. All rights reserved.</div>
+      <div class="bottom-right">
+        <span class="pill"><i class="fa-solid fa-lock"></i> Confidential</span>
+        <span class="pill"><i class="fa-solid fa-chart-line"></i> Strategy Engine</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-root" id="modal-root" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay" tabindex="-1"></div>
+    <div class="modal-wrapper" role="dialog" aria-modal="true">
+      <div class="modal-content" id="modal-content">
+        <button class="modal-close-btn" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-body-scroll" id="modal-body-injection"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
